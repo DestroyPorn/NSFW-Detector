@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^4.1.0",
+    "axios": "^1.2.3",
+    "nsfwjs": "^2.4.2"
+  }
+}
