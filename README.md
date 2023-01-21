@@ -1,6 +1,7 @@
 <p align="center">
   <img src="https://avatars.githubusercontent.com/u/123158165?s=200&v=4" />
-  <h1>DestroyPorn - NSFW Image Detector</h1>
+  <h1>DestroyPorn - NSFW Detector</h1>
+  <p>Detect nsfw content in images/gifs/videos using AI.</p>
 </p>
 
 ## Example
