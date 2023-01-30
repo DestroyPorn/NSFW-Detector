@@ -1,8 +1,10 @@
 import getPredictions from'./getPredictions.js'
 
-function DestroyPornError(message) {
-    this.message = message;
-    this.name = 'DestroyPorn_Error';
+class DestroyPornError {
+    name = 'DestroyPorn_Error';
+    constructor(message){
+        this.message = message;
+    }
 }
 
 export default async function (imageURL, sendMoreInfo) {
