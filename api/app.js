@@ -4,14 +4,14 @@ const app = express()
 const port = 3000
 
 app.get('/api/classify', async (req, res) => {
-  var url = req.query.frame
+  let url = req.query.frame
 
   if(!url){
     return res.json({response:"Param 'frame' is required.", error:true})
   }
 
 
-  var results = await classify(url, true)
+  let results = await classify(url, true)
   
   if(results.ClassifiedAs === 'NSFW'){
       return res.json({response:"nsfw", type:results.WinnerTag, probability:results.Probability, predictions:results.AllOptions, error:false})
