@@ -1,8 +1,28 @@
 {
-  "type":"module",
+  "name": "nsfw-detector",
+  "type": "module",
+  "description": "<p align=\"center\">\r   <img src=\"https://avatars.githubusercontent.com/u/123158165?s=200&v=4\" />\r   <h1>DestroyPorn - NSFW Detector</h1>\r   <p>Detect nsfw content in images/gifs/videos using AI.</p>\r </p>",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DestroyPorn/NSFW-Detector.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DestroyPorn/NSFW-Detector/issues"
+  },
   "dependencies": {
     "@tensorflow/tfjs-node": "^4.1.0",
     "axios": "^1.2.3",
+    "express": "^4.18.2",
     "nsfwjs": "^2.4.2"
-  }
+  },
+  "homepage": "https://github.com/DestroyPorn/NSFW-Detector#readme"
 }
