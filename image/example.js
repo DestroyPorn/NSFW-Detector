@@ -1,5 +1,5 @@
-async function example(){
-    const classify = require('./classify.js')
+import classify from './classify.js'
+export default async function example(){
 
     var nsfw_image_example = 'https://cdn.discordapp.com/attachments/1065928419059179522/1066087850371711047/meaAaGwObaaaamhsUPZEqiIbxKg8tny13.png' //example porn image
     var results = await classify(nsfw_image_example, true)
@@ -10,5 +10,3 @@ async function example(){
         return console.log("Yay, this image is not nsfw!")
     }
 }
-
-example()
