@@ -1,5 +1,5 @@
 import express from 'express'
-import classify from '../image/classify'
+import classify from '../image/classify.js'
 const app = express()
 const port = 3000
 
