@@ -1,11 +1,11 @@
-const getPredictions = require('./getPredictions.js')
+import getPredictions from'./getPredictions.js'
 
 function DestroyPornError(message) {
     this.message = message;
     this.name = 'DestroyPorn_Error';
 }
 
-module.exports = async function (imageURL, sendMoreInfo) {
+export default async function (imageURL, sendMoreInfo) {
     if(sendMoreInfo === true){
         let predictions = await getPredictions(imageURL)
         if(predictions[0].className === 'Neutral'){

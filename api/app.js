@@ -1,4 +1,5 @@
-const express = require('express')
+import express from 'express'
+import classify from './classify'
 const app = express()
 const port = 3000
 
@@ -9,7 +10,6 @@ app.get('/api/classify', async (req, res) => {
     return res.json({response:"Param 'frame' is required.", error:true})
   }
 
-  const classify = require('./classify.js')
 
   var results = await classify(url, true)
   
