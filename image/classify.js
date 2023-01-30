@@ -7,7 +7,7 @@ class DestroyPornError {
     }
 }
 
-export default async function (imageURL, sendMoreInfo) {
+export default async function classify(imageURL, sendMoreInfo) {
     if(sendMoreInfo === true){
         let predictions = await getPredictions(imageURL)
         if(predictions[0].className === 'Neutral'){
